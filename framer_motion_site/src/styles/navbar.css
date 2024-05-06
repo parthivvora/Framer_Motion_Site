@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --secondary-color: #5e5e5e;
+  --brand-color: #1fa84f;
+  --body-color: #f8f6f4;
+}
+.navbar-section .header-menus a {
+  color: var(--secondary-color);
+  transition: 0.3s ease-in-out;
+}
+
