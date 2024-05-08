@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --body-color: #f8f6f4;
+  --text-color: #404742;
+  --paragraph-text-color: #5e5e5e;
+  --box-color: #eff0ef;
+  --green-hover-color: #1fa84f;
+}
+body {
+  font-family: "Outfit", sans-serif !important;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: var(--body-color) !important;
+  overflow-x: hidden;
+}
+
+.home-section .excellent-it-section .excellent-it-content h1,
+.home-section .services-section .services-section-content h1,
+.home-section .it-services-section .it-services-content h1,
+.home-section .it-experience-section .it-experience-content h1,
+.home-section
+  .it-experience-section
+  .it-experience-content
+  .progress-bar-content
+  h1,
+.home-section .why-choose-section .why-choose-content h1 {
+  color: var(--text-color);
+}
+.home-section .excellent-it-section .excellent-it-content p,
+.home-section .services-section .services-section-content p,
+.home-section .services-section .services-content-box p,
+.home-section .it-services-section .it-services-content p,
+.home-section .it-experience-section .it-experience-content p,
+.home-section .why-choose-section .why-choose-content p,
+.home-section .why-choose-section .why-choose-box-content p {
+  color: var(--paragraph-text-color);
+}
+.home-section .services-section .services-content-box,
+.home-section .it-services-section .it-service-content-box,
+.home-section .why-choose-section .why-choose-box {
+  background-color: var(--box-color);
+  z-index: 1;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.home-section
+  .services-section
+  .row
+  > :not(:nth-child(n + 5))
+  .services-content-box {
+  margin-bottom: 20px;
+}
+.home-section .services-section .services-content-box::before,
+.home-section .it-services-section .it-service-content-box::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 00%;
+  height: 100%;
+  background-color: var(--green-hover-color);
+  transition: 0.5s;
+  z-index: -1;
+}
+.home-section .services-section .services-content-box:hover::before,
+.home-section .it-services-section .it-service-content-box:hover::before{
+  width: 100%;
+}
+.home-section .services-section .services-content-box:hover h1,
+.home-section .services-section .services-content-box:hover p,
+.home-section .services-section .services-content-box:hover i,
+.home-section .services-section .services-content-box:hover a,
+.home-section .services-section .services-content-box:hover svg,
+.home-section .it-services-section .it-service-content-box:hover i,
+.home-section .it-services-section .it-service-content-box:hover h1,
+.home-section .it-services-section .it-service-content-box:hover svg {
+  color: white;
+  transition: 0.4s;
+}
+.home-section .it-experience-section .it-experience-content .progress {
+  height: 0.6rem;
+}
+.home-section .it-experience-section .it-experience-content .progress-bar {
+  background-color: var(--green-hover-color);
+  border-radius: 0.375rem;
+}
