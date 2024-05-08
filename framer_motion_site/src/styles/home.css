@@ -24,7 +24,8 @@ body {
   .it-experience-content
   .progress-bar-content
   h1,
-.home-section .why-choose-section .why-choose-content h1 {
+.home-section .why-choose-section .why-choose-content h1,
+.portfolio-common-section .portfolio-common-content h1 {
   color: var(--text-color);
 }
 .home-section .excellent-it-section .excellent-it-content p,
@@ -33,7 +34,8 @@ body {
 .home-section .it-services-section .it-services-content p,
 .home-section .it-experience-section .it-experience-content p,
 .home-section .why-choose-section .why-choose-content p,
-.home-section .why-choose-section .why-choose-box-content p {
+.home-section .why-choose-section .why-choose-box-content p,
+.portfolio-common-section .portfolio-nav-tabs li {
   color: var(--paragraph-text-color);
 }
 .home-section .services-section .services-content-box,
@@ -65,7 +67,7 @@ body {
   z-index: -1;
 }
 .home-section .services-section .services-content-box:hover::before,
-.home-section .it-services-section .it-service-content-box:hover::before{
+.home-section .it-services-section .it-service-content-box:hover::before {
   width: 100%;
 }
 .home-section .services-section .services-content-box:hover h1,

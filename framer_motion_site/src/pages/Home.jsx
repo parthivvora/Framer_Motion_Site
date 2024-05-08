@@ -10,6 +10,7 @@ import { TiVendorAndroid } from "react-icons/ti";
 import { BsFillMegaphoneFill } from "react-icons/bs";
 import { IoGameControllerOutline } from "react-icons/io5";
 import ProgressBar from "react-bootstrap/ProgressBar";
+import PortfolioCommon from "../components/PortfolioCommon";
 
 function Home() {
   return (
@@ -545,13 +546,13 @@ function Home() {
                 </div>
               </motion.div>
             </div>
-            <motion.div
-              initial={{ opacity: 0, y: -200 }}
-              transition={{ duration: 0.7, ease: "easeIn" }}
-              whileInView={{ opacity: 1, y: 0 }}
-              className="col-lg-4 col-md-4 col-sm-12"
-            >
-              <div className="why-choose-box px-4 py-10 flex flex-col gap-4">
+            <div className="col-lg-4 col-md-4 col-sm-12">
+              <motion.div
+                initial={{ opacity: 0, y: -200 }}
+                transition={{ duration: 0.7, ease: "easeIn" }}
+                whileInView={{ opacity: 1, y: 0 }}
+                className="why-choose-box px-4 py-10 flex flex-col gap-4"
+              >
                 <div className="why-choose-box-icon">
                   <h1 className="text-5xl font-bold text-green-600">02.</h1>
                 </div>
@@ -563,15 +564,15 @@ function Home() {
                     Tenetur
                   </p>
                 </div>
-              </div>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: 200 }}
-              transition={{ duration: 0.7, ease: "easeIn" }}
-              whileInView={{ opacity: 1, x: 0 }}
-              className="col-lg-4 col-md-4 col-sm-12"
-            >
-              <div className="why-choose-box px-4 py-10 flex flex-col gap-4">
+              </motion.div>
+            </div>
+            <div className="col-lg-4 col-md-4 col-sm-12">
+              <motion.div
+                initial={{ opacity: 0, x: 200 }}
+                transition={{ duration: 0.7, ease: "easeIn" }}
+                whileInView={{ opacity: 1, x: 0 }}
+                className="why-choose-box px-4 py-10 flex flex-col gap-4"
+              >
                 <div className="why-choose-box-icon">
                   <h1 className="text-5xl font-bold text-green-600">03.</h1>
                 </div>
@@ -585,11 +586,12 @@ function Home() {
                     Tenetur
                   </p>
                 </div>
-              </div>
-            </motion.div>
+              </motion.div>
+            </div>
           </div>
         </div>
       </div>
+      <PortfolioCommon />
     </section>
   );
 }

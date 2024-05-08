@@ -1,0 +1,44 @@
+[
+  {
+    "appName": "tansiApp",
+    "appType": "mobile application",
+    "tags": ["#react", "#HTML", "#next js", "#node"],
+    "appImage": "portfolio1.jpeg",
+    "type": "mobile"
+  },
+  {
+    "appName": "tansiApp",
+    "appType": "mobile application",
+    "tags": ["#js", "#HTML", "#next js", "#node"],
+    "appImage": "portfolio2.jpeg",
+    "type": "mobile"
+  },
+  {
+    "appName": "imolas",
+    "appType": "mobile application",
+    "tags": ["#redux", "#HTML", "#next js", "#gsap"],
+    "appImage": "portfolio3.jpeg",
+    "type": "web"
+  },
+  {
+    "appName": "abertonApp",
+    "appType": "mobile application",
+    "tags": ["#react", "#HTML", "#next js", "#node"],
+    "appImage": "portfolio4.png",
+    "type": "web"
+  },
+  {
+    "appName": "taknaruytApp",
+    "appType": "web application",
+    "tags": ["#react", "#PHP", "#next js", "#node"],
+    "appImage": "portfolio5.jpeg",
+    "type": "data"
+  },
+  {
+    "appName": "bodihApp",
+    "appType": "web application",
+    "tags": ["#react", "#HTML", "#ruby", "#node"],
+    "appImage": "portfolio6.jpeg",
+    "type": "data"
+  }
+]
