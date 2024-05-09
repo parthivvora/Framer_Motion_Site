@@ -25,7 +25,13 @@ body {
   .progress-bar-content
   h1,
 .home-section .why-choose-section .why-choose-content h1,
-.portfolio-common-section .portfolio-common-content h1 {
+.portfolio-common-section .portfolio-common-content h1,
+.pricing-plan-section .pricing-plan-content h1,
+.customer-testimonial-section .customer-testimonial-content h1,
+.our-team-section .our-team-content h1,
+.blog-common-section .blog-common-content h1,
+.faq-section .faq-content h1,
+.contact-us-section .contact-us-content h1 {
   color: var(--text-color);
 }
 .home-section .excellent-it-section .excellent-it-content p,
@@ -35,12 +41,34 @@ body {
 .home-section .it-experience-section .it-experience-content p,
 .home-section .why-choose-section .why-choose-content p,
 .home-section .why-choose-section .why-choose-box-content p,
-.portfolio-common-section .portfolio-nav-tabs li {
+.portfolio-common-section .portfolio-nav-tabs li,
+.pricing-plan-section .pricing-plan-content p,
+.pricing-plan-section .pricing-plan-content-box .icon-box svg,
+.pricing-plan-section
+  .pricing-plan-content-box
+  .price-details-content
+  h1:nth-child(3),
+.pricing-plan-section .pricing-plan-content-box .pricing-details li,
+.customer-testimonial-section .customer-testimonial-content p,
+.customer-testimonial-section .review-content-box .review-details p,
+.our-team-section .our-team-content p,
+.our-team-section .our-team-content-box h1:nth-child(3),
+.blog-common-section .blog-common-content p,
+.blog-common-section .blog-details-box .blog-details .blog-details-top,
+.blog-common-section .blog-details-box .blog-details .blog-details-middle p,
+.faq-section .faq-content p,
+.accordion .accordion-item .accordion-body,
+.contact-us-section .contact-us-content p,
+.contact-us-section .contact-info-list li span {
   color: var(--paragraph-text-color);
 }
 .home-section .services-section .services-content-box,
 .home-section .it-services-section .it-service-content-box,
-.home-section .why-choose-section .why-choose-box {
+.home-section .why-choose-section .why-choose-box,
+.pricing-plan-section .pricing-plan-content-box,
+.customer-testimonial-section .review-content-box,
+.our-team-section .our-team-content-box,
+.blog-common-section .blog-details-box {
   background-color: var(--box-color);
   z-index: 1;
   position: relative;
@@ -87,4 +115,15 @@ body {
 .home-section .it-experience-section .it-experience-content .progress-bar {
   background-color: var(--green-hover-color);
   border-radius: 0.375rem;
+}
+.accordion .accordion-item .accordion-header button {
+  padding: 1.5rem;
+  background-color: var(--box-color);
+  font-size: 1.2rem;
+  font-weight: 500;
+  box-shadow: none;
+}
+.accordion .accordion-item .accordion-body,
+.contact-us-section form .contact-us-input-field {
+  background-color: var(--box-color);
 }

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Bodih Dgmas",
+    "type": "Front-End developer",
+    "image": "team-1.jpg"
+  },
+  {
+    "name": "Ahmad Errami",
+    "type": "Back-End developer",
+    "image": "team-2.jpg"
+  },
+  {
+    "name": "John Smith",
+    "type": "web designer",
+    "image": "team-3.jpg"
+  },
+  {
+    "name": "Satoshi Nakamoto",
+    "type": "CEO founder",
+    "image": "team-4.jpg"
+  }
+]
