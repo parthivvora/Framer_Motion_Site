@@ -59,7 +59,8 @@ body {
 .faq-section .faq-content p,
 .accordion .accordion-item .accordion-body,
 .contact-us-section .contact-us-content p,
-.contact-us-section .contact-info-list li span {
+.contact-us-section .contact-info-list li span,
+.footer-section .copy-right-part p {
   color: var(--paragraph-text-color);
 }
 .home-section .services-section .services-content-box,
@@ -126,4 +127,27 @@ body {
 .accordion .accordion-item .accordion-body,
 .contact-us-section form .contact-us-input-field {
   background-color: var(--box-color);
+}
+
+.footer-section {
+  background-color: #1c1d1c;
+}
+.footer-section .footer-part-1 {
+  background-color: #202020;
+}
+.footer-section .footer-part-1 p {
+  color: #a2a1a1;
+}
+.footer-section h1 {
+  color: #b6b6b6;
+}
+.footer-section hr{
+  color: #b1b1b1;
+  border-top: 1px solid;
+  margin: 1.5rem 0rem;
+  width: 100%;
+}
+.footer-section .site-map-part li a,
+.footer-section .copy-right-part a {
+  color: #ddd;
 }
