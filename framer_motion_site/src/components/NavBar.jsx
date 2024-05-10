@@ -1,48 +1,45 @@
 import logoImage from "../assets/logo.png";
+import apiRoutes from "../constants/apiRoutes";
 import "../styles/navbar.css";
 import JoinNowButton from "./JoinNowButton";
+import { Container, Navbar } from "react-bootstrap";
 
 function NavBar() {
   return (
-    <header className="navbar-section shadow-md py-2">
-      <div className="container">
-        <div className="row items-center">
-          <div className="col-lg-4 col-md-4 col-sm-12">
-            <a href="#">
-              <img src={logoImage} alt="logo.png" className="w-56" />
-            </a>
-          </div>
-          <div className="col-lg-6 col-md-6 col-sm-12">
-            <ul className="header-menus flex items-center gap-4">
-              <li className="capitalize font-semibold text-lg">
-                <a href="#">home</a>
-              </li>
-              <li className="capitalize font-semibold text-lg">
-                <a href="#">about</a>
-              </li>
-              <li className="capitalize font-semibold text-lg">
-                <a href="#">services</a>
-              </li>
-              <li className="capitalize font-semibold text-lg">
-                <a href="#">pages</a>
-              </li>
-              <li className="capitalize font-semibold text-lg">
-                <a href="#">portfolio</a>
-              </li>
-              <li className="capitalize font-semibold text-lg">
-                <a href="#">blog</a>
-              </li>
-              <li className="capitalize font-semibold text-lg">
-                <a href="#">contact us</a>
-              </li>
-            </ul>
-          </div>
-          <div className="col-lg-2 col-md-2 col-sm-12">
-            <JoinNowButton />
-          </div>
-        </div>
-      </div>
-    </header>
+    <Navbar collapseOnSelect expand="lg">
+      <Container>
+        <a href="#">
+          <img src={logoImage} alt="logo.png" className="w-40 sm:w-56" />
+        </a>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse
+          id="responsive-navbar-nav"
+          className="justify-between flex flex-col items-start gap-4 sm:items-center sm:flex-row"
+        >
+          <ul className="header-menus flex flex-col gap-4 sm:flex-row sm:items-center sm:mx-auto">
+            <li className="capitalize font-semibold text-base sm:text-lg">
+              <a href={apiRoutes.HOME}>home</a>
+            </li>
+            <li className="capitalize font-semibold text-base sm:text-lg">
+              <a href={apiRoutes.ABOUT}>about</a>
+            </li>
+            <li className="capitalize font-semibold text-base sm:text-lg">
+              <a href={apiRoutes.SERVICE}>services</a>
+            </li>
+            <li className="capitalize font-semibold text-base sm:text-lg">
+              <a href={apiRoutes.PORTFOLIO}>portfolio</a>
+            </li>
+            <li className="capitalize font-semibold text-base sm:text-lg">
+              <a href={apiRoutes.BLOG}>blog</a>
+            </li>
+            <li className="capitalize font-semibold text-base sm:text-lg">
+              <a href={apiRoutes.CONTACT}>contact us</a>
+            </li>
+          </ul>
+          <JoinNowButton />
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 

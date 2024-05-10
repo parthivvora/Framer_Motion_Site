@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 function Footer() {
   return (
-    <section className="footer-section py-5">
+    <section className="footer-section py-4 sm:py-5">
       <div className="container">
         <div className="row">
           <div className="col-lg-3 col-md-3 col-sm-12">
@@ -45,7 +45,7 @@ function Footer() {
               initial={{ opacity: 0, y: -100 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, ease: "easeIn" }}
-              className="text-xl font-semibold capitalize"
+              className="text-xl font-semibold capitalize mt-12 sm:mt-0"
             >
               site map
             </motion.h1>
@@ -82,7 +82,7 @@ function Footer() {
               initial={{ opacity: 0, y: -100 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, ease: "easeIn" }}
-              className="text-xl font-semibold capitalize"
+              className="text-xl font-semibold capitalize mt-12 sm:mt-0"
             >
               follow us
             </motion.h1>
@@ -119,7 +119,7 @@ function Footer() {
               initial={{ opacity: 0, y: -100 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, ease: "easeIn" }}
-              className="text-xl font-semibold capitalize"
+              className="text-xl font-semibold capitalize mt-12 sm:mt-0"
             >
               our service
             </motion.h1>
