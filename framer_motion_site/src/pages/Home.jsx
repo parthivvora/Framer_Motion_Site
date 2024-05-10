@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import ScrollTrigger from "react-scroll-trigger";
+import CountUp from "react-countup";
 import JoinNowButton from "../components/JoinNowButton";
 import customerTestimonialData from "../data/customerTestimonialData.json";
 import teamData from "../data/teamData.json";
@@ -25,8 +27,10 @@ import AboutUsCommon from "../components/AboutUsCommon";
 import FaqCommon from "../components/FaqCommon";
 import ContactUsCommon from "../components/ContactUsCommon";
 import ServicesCommon from "../components/ServicesCommon";
+import { useState } from "react";
 
 function Home() {
+  const [counterStart, setCounterStart] = useState(false);
   const clientReviewOptions = {
     loop: true,
     margin: 10,
@@ -120,44 +124,84 @@ function Home() {
         <div className="container">
           <div className="row gap-8 sm:gap-0">
             <div className="col-lg-3 col-md-3 col-sm-12">
-              <div className="counter-box flex flex-col gap-2 sm:gap-4 items-center">
-                <h1 className="text-4xl sm:text-6xl font-bold text-green-600">
-                  500
-                </h1>
-                <h1 className="font-bold capitalize text-lg sm:text-2xl sm:font-extrabold text-white">
-                  happy clients
-                </h1>
-              </div>
+              <ScrollTrigger
+                onEnter={() => setCounterStart(true)}
+                onExit={() => setCounterStart(false)}
+              >
+                <motion.div
+                  initial={{ opacity: 0, y: 100 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.7, ease: "easeIn" }}
+                  className="counter-box flex flex-col gap-2 sm:gap-4 items-center"
+                >
+                  <h1 className="text-4xl sm:text-6xl font-bold text-green-600">
+                    <CountUp start={0} end={60} duration={10} />
+                  </h1>
+                  <h1 className="font-bold capitalize text-lg sm:text-2xl sm:font-extrabold text-white">
+                    happy clients
+                  </h1>
+                </motion.div>
+              </ScrollTrigger>
             </div>
             <div className="col-lg-3 col-md-3 col-sm-12">
-              <div className="counter-box flex flex-col gap-2 sm:gap-4 items-center">
-                <h1 className="text-4xl sm:text-6xl font-bold text-green-600">
-                  60
-                </h1>
-                <h1 className="font-bold capitalize text-lg sm:text-2xl sm:font-extrabold text-white">
-                  Hard Worker
-                </h1>
-              </div>
+              <ScrollTrigger
+                onEnter={() => setCounterStart(true)}
+                onExit={() => setCounterStart(false)}
+              >
+                <motion.div
+                  initial={{ opacity: 0, y: -100 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.7, ease: "easeIn" }}
+                  className="counter-box flex flex-col gap-2 sm:gap-4 items-center"
+                >
+                  <h1 className="text-4xl sm:text-6xl font-bold text-green-600">
+                    <CountUp start={0} end={50} duration={10} />
+                  </h1>
+                  <h1 className="font-bold capitalize text-lg sm:text-2xl sm:font-extrabold text-white">
+                    Hard Worker
+                  </h1>
+                </motion.div>
+              </ScrollTrigger>
             </div>
             <div className="col-lg-3 col-md-3 col-sm-12">
-              <div className="counter-box flex flex-col gap-2 sm:gap-4 items-center">
-                <h1 className="text-4xl sm:text-6xl font-bold text-green-600">
-                  800
-                </h1>
-                <h1 className="font-bold capitalize text-lg sm:text-2xl sm:font-extrabold text-white">
-                  Complete Project
-                </h1>
-              </div>
+              <ScrollTrigger
+                onEnter={() => setCounterStart(true)}
+                onExit={() => setCounterStart(false)}
+              >
+                <motion.div
+                  initial={{ opacity: 0, y: 100 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.7, ease: "easeIn" }}
+                  className="counter-box flex flex-col gap-2 sm:gap-4 items-center"
+                >
+                  <h1 className="text-4xl sm:text-6xl font-bold text-green-600">
+                    <CountUp start={0} end={40} duration={10} />
+                  </h1>
+                  <h1 className="font-bold capitalize text-lg sm:text-2xl sm:font-extrabold text-white">
+                    Complete Project
+                  </h1>
+                </motion.div>
+              </ScrollTrigger>
             </div>
             <div className="col-lg-3 col-md-3 col-sm-12">
-              <div className="counter-box flex flex-col gap-2 sm:gap-4 items-center">
-                <h1 className="text-4xl sm:text-6xl font-bold text-green-600">
-                  30
-                </h1>
-                <h1 className="font-bold capitalize text-lg sm:text-2xl sm:font-extrabold text-white">
-                  Years Of Exprience
-                </h1>
-              </div>
+              <ScrollTrigger
+                onEnter={() => setCounterStart(true)}
+                onExit={() => setCounterStart(false)}
+              >
+                <motion.div
+                  initial={{ opacity: 0, y: -100 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.7, ease: "easeIn" }}
+                  className="counter-box flex flex-col gap-2 sm:gap-4 items-center"
+                >
+                  <h1 className="text-4xl sm:text-6xl font-bold text-green-600">
+                    <CountUp start={0} end={30} duration={10} />
+                  </h1>
+                  <h1 className="font-bold capitalize text-lg sm:text-2xl sm:font-extrabold text-white">
+                    Years Of Experience
+                  </h1>
+                </motion.div>
+              </ScrollTrigger>
             </div>
           </div>
         </div>

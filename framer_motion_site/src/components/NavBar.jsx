@@ -8,7 +8,7 @@ function NavBar() {
   return (
     <Navbar collapseOnSelect expand="lg">
       <Container>
-        <a href="#">
+        <a href={apiRoutes.HOME}>
           <img src={logoImage} alt="logo.png" className="w-40 sm:w-56" />
         </a>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
