@@ -5,6 +5,8 @@ const apiRoutes = {
   PORTFOLIO: "/portfolio",
   BLOG: "/blog",
   CONTACT: "/contact",
+  REGISTER: "/register",
+  LOGIN: "/login",
 };
 
 export default apiRoutes;

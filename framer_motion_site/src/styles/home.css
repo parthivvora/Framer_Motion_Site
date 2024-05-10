@@ -35,7 +35,8 @@ a {
 .blog-common-section .blog-common-content h1,
 .faq-section .faq-content h1,
 .contact-us-section .contact-us-content h1,
-.about-us-section .about-us-content h1 {
+.about-us-section .about-us-content h1,
+.auth-form .title-part h1 {
   color: var(--text-color);
 }
 .home-section .excellent-it-section .excellent-it-content p,
@@ -65,7 +66,8 @@ a {
 .contact-us-section .contact-us-content p,
 .contact-us-section .contact-info-list li span,
 .footer-section .copy-right-part p,
-.about-us-section .about-us-content p {
+.about-us-section .about-us-content p,
+.auth-form .title-part p {
   color: var(--paragraph-text-color);
 }
 .services-section .services-content-box,
@@ -74,7 +76,8 @@ a {
 .pricing-plan-section .pricing-plan-content-box,
 .customer-testimonial-section .review-content-box,
 .our-team-section .our-team-content-box,
-.blog-common-section .blog-details-box {
+.blog-common-section .blog-details-box,
+.auth-form form input {
   background-color: var(--box-color);
   z-index: 1;
   position: relative;

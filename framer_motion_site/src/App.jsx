@@ -8,6 +8,8 @@ import apiRoutes from "./constants/apiRoutes";
 import Portfolio from "./pages/Portfolio";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
+import Register from "./pages/Register";
+import Login from "./pages/Login";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           <Route path={apiRoutes.PORTFOLIO} element={<Portfolio />} />
           <Route path={apiRoutes.BLOG} element={<Blog />} />
           <Route path={apiRoutes.CONTACT} element={<Contact />} />
+          <Route path={apiRoutes.REGISTER} element={<Register />} />
+          <Route path={apiRoutes.LOGIN} element={<Login />} />
         </Routes>
       </BrowserRouter>
     </>
