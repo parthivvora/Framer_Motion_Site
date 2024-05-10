@@ -11,7 +11,7 @@ function PortfolioCommon() {
       <div className="container">
         <div className="row">
           <div className="col-sm-12">
-            <div className="portfolio-common-content flex flex-col gap-3 mb-8">
+            <div className="portfolio-common-content flex flex-col gap-2 sm:gap-[1rem] mb-3">
               <motion.h6
                 initial={{ opacity: 0, y: 100 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -24,7 +24,7 @@ function PortfolioCommon() {
                 initial={{ opacity: 0, y: 100 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, ease: "easeIn" }}
-                className="text-5xl font-semibold"
+                className="text-4xl sm:text-5xl font-semibold"
               >
                 Our Portfolio
               </motion.h1>
