@@ -4,7 +4,7 @@ import Accordion from "react-bootstrap/Accordion";
 
 function FaqCommon() {
   return (
-    <div className="faq-section py-10 sm:py-36">
+    <div className="faq-section pt-10 sm:pt-32">
       <div className="container">
         <div className="row">
           <div className="col-sm-12">

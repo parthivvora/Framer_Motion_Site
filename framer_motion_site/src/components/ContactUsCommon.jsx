@@ -3,7 +3,7 @@ import Form from "react-bootstrap/Form";
 
 function ContactUsCommon() {
   return (
-    <div className="contact-us-section pb-16 sm:pb-36">
+    <div className="contact-us-section pt-10 sm:pt-32">
       <div className="container">
         <div className="row">
           <div className="col-sm-12">

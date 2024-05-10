@@ -7,7 +7,7 @@ import { useState } from "react";
 function PortfolioCommon() {
   const [portfolioType, setPortfolioType] = useState("all");
   return (
-    <div className="portfolio-common-section">
+    <div className="portfolio-common-section pt-10 sm:pt-32">
       <div className="container">
         <div className="row">
           <div className="col-sm-12">
@@ -75,8 +75,8 @@ function PortfolioCommon() {
                       className="portfolio-item-box rounded-lg overflow-hidden"
                     >
                       <img
-                        src={`${window.location}portfolio/${portfolio.appImage}`}
-                        alt="portfolio_image"
+                        src={`${window.location.origin}/portfolio/${portfolio.appImage}`}
+                        alt={window.location}
                         className="img-fluid relative"
                       />
                       <div className="portfolio-item-box-content px-5 flex flex-col gap-2">
@@ -108,8 +108,8 @@ function PortfolioCommon() {
                     className="portfolio-item-box rounded-lg overflow-hidden"
                   >
                     <img
-                      src={`${window.location}portfolio/${portfolio.appImage}`}
-                      alt="portfolio_image"
+                      src={`${window.location.origin}/portfolio/${portfolio.appImage}`}
+                      alt={window.location}
                       className="img-fluid relative"
                     />
                     <div className="portfolio-item-box-content px-5 flex flex-col gap-2">

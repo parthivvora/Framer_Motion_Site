@@ -4,7 +4,7 @@ import "../styles/home.css";
 
 function BlogCommon() {
   return (
-    <section className="blog-common-section">
+    <section className="blog-common-section pt-10 sm:pt-32">
       <div className="container">
         <div className="row">
           <div className="col-sm-12">
@@ -47,7 +47,7 @@ function BlogCommon() {
             >
               <div className="blog-details-box">
                 <img
-                  src={`${window.location}blog/${blog.image}`}
+                  src={`${window.location.origin}/blog/${blog.image}`}
                   alt="blog_image"
                 />
                 <div className="blog-details p-4">

@@ -9,7 +9,7 @@ import ProgressBar from "react-bootstrap/ProgressBar";
 function AboutUsCommon() {
   return (
     <>
-      <div className="about-us-section py-10 sm:py-36">
+      <div className="about-us-section pt-10 sm:pt-32">
         <div className="container">
           <div className="row">
             <div className="col-lg-5 col-md-5 col-sm-12">
@@ -67,7 +67,7 @@ function AboutUsCommon() {
           </div>
         </div>
       </div>
-      <div className="it-services-section pb-10 sm:pb-36">
+      <div className="it-services-section pt-10 sm:pt-32">
         <div className="container">
           <div className="row flex-col-reverse sm:flex-row-reverse">
             <div className="col-lg-7 col-md-7 col-sm-12">
@@ -144,7 +144,7 @@ function AboutUsCommon() {
           </div>
         </div>
       </div>
-      <div className="it-experience-section py-0 sm:py-0">
+      <div className="it-experience-section pt-10 sm:pt-32">
         <div className="container">
           <div className="row">
             <div className="col-lg-6 col-md-6 col-sm-12">

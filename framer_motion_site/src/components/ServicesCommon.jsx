@@ -4,7 +4,7 @@ import { TiVendorAndroid } from "react-icons/ti";
 
 function ServicesCommon() {
   return (
-    <div className="services-section pt-10 sm:pt-36">
+    <div className="services-section pt-10 sm:pt-32">
       <div className="container">
         <div className="row">
           <div className="col-12">
