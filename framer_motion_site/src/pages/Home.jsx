@@ -4,10 +4,6 @@ import customerTestimonialData from "../data/customerTestimonialData.json";
 import teamData from "../data/teamData.json";
 import NavBar from "../components/NavBar";
 import itSolutionImage from "../assets/home/it_solution.png";
-import faqCustomerImage from "../assets/home/faq_customer.png";
-import aboutUsImage from "../assets/about/about_us.png";
-import serviceImage from "../assets/about/about_us_2.png";
-import itExperienceImage from "../assets/about/about_us_3.png";
 import clientLogo1 from "../assets/home/1-white.png";
 import clientLogo2 from "../assets/home/2-white.png";
 import clientLogo3 from "../assets/home/3-white.png";
@@ -16,19 +12,9 @@ import clientLogo5 from "../assets/home/5-white.png";
 import clientLogo6 from "../assets/home/6-white.png";
 import clientLogo7 from "../assets/home/7-white.png";
 import "../styles/home.css";
-import { TiVendorAndroid, TiShoppingCart } from "react-icons/ti";
-import {
-  BsFillMegaphoneFill,
-  BsCheck2Circle,
-  BsCoin,
-  BsCash,
-  BsCashCoin,
-} from "react-icons/bs";
-import { IoGameControllerOutline } from "react-icons/io5";
+import { TiShoppingCart } from "react-icons/ti";
+import { BsCheck2Circle, BsCoin, BsCash, BsCashCoin } from "react-icons/bs";
 import { GoXCircle } from "react-icons/go";
-import ProgressBar from "react-bootstrap/ProgressBar";
-import Accordion from "react-bootstrap/Accordion";
-import Form from "react-bootstrap/Form";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
@@ -698,4 +684,3 @@ function Home() {
 }
 
 export default Home;
-// text-4xl sm:text-6xl text-green-600

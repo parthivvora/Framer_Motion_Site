@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 function Footer() {
   return (
-    <section className="footer-section py-4 sm:py-5">
+    <section className="footer-section mt-10 sm:mt-28 py-4 sm:py-5">
       <div className="container">
         <div className="row">
           <div className="col-lg-3 col-md-3 col-sm-12">
